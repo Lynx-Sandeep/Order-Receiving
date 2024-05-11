@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Receiving</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Order Receiving</h1>
+    <p>Submit your order using the form below:</p>
+  </header>
+  <main>
+    <form id="orderForm">
+      <label for="buyerName">Buyer's Name:</label>
+      <input type="text" id="buyerName" name="buyerName" required>
+
+      <label for="contactInfo">Contact Information:</label>
+      <input type="text" id="contactInfo" name="contactInfo" required>
+
+      <label for="product">Product/Item:</label>
+      <input type="text" id="product" name="product" required>
+
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" required>
+
+      <button type="submit">Submit Order</button>
+    </form>
+  </main>
+  <footer>
+    <p>&copy; 2024 Order Receiving</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

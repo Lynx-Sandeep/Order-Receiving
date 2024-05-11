@@ -1,0 +1,25 @@
+document.getElementById("orderForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  // Get form values
+  var buyerName = document.getElementById("buyerName").value;
+  var contactInfo = document.getElementById("contactInfo").value;
+  var product = document.getElementById("product").value;
+  var quantity = document.getElementById("quantity").value;
+
+  // Create order object
+  var order = {
+    buyerName: buyerName,
+    contactInfo: contactInfo,
+    product: product,
+    quantity: quantity
+  };
+
+  // You can handle the order data here (e.g., send it to your email, store it in a database)
+
+  // Clear form fields
+  document.getElementById("orderForm").reset();
+
+  // Show success message (optional)
+  alert("Order submitted successfully!");
+});
